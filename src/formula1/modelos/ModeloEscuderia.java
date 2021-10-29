@@ -13,13 +13,13 @@ public class ModeloEscuderia {
     
     private String id;
     private String nombre;
-    private String presupuesto;
+    private int presupuesto;
     private String tipoMotor;
 
     public ModeloEscuderia() {
     }
 
-    public ModeloEscuderia(String id, String nombre, String presupuesto, String tipoMotor) {
+    public ModeloEscuderia(String id, String nombre, int presupuesto, String tipoMotor) {
         this.id = id;
         this.nombre = nombre;
         this.presupuesto = presupuesto;
@@ -42,11 +42,11 @@ public class ModeloEscuderia {
         this.nombre = nombre;
     }
 
-    public String getPresupuesto() {
+    public int getPresupuesto() {
         return presupuesto;
     }
 
-    public void setPresupuesto(String presupuesto) {
+    public void setPresupuesto(int presupuesto) {
         this.presupuesto = presupuesto;
     }
 

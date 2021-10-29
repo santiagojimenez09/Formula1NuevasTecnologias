@@ -16,16 +16,20 @@ public class ModeloPiloto {
     private String apellidos;
     private int salario;
     private String idEscuderia;
+    private String fechaIn;
+    private String fechaOut;
 
     public ModeloPiloto() {
     }
 
-    public ModeloPiloto(int id, String nombres, String apellidos, int salario, String idEscuderia) {
+    public ModeloPiloto(int id, String nombres, String apellidos, int salario, String idEscuderia, String fechain, String fechaout) {
         this.id = id;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.salario = salario;
         this.idEscuderia = idEscuderia;
+        this.fechaIn = fechain;
+        this.fechaOut = fechaout;
     }
 
     public int getId() {
@@ -67,6 +71,24 @@ public class ModeloPiloto {
     public void setIdEscuderia(String idEscuderia) {
         this.idEscuderia = idEscuderia;
     }
+
+    public String getFechain() {
+        return fechaIn;
+    }
+
+    public void setFechain(String fechain) {
+        this.fechaIn = fechain;
+    }
+
+    public String getFechaout() {
+        return fechaOut;
+    }
+
+    public void setFechaout(String fechaout) {
+        this.fechaOut = fechaout;
+    }
+    
+    
     
     
     
